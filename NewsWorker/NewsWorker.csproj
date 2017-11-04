@@ -75,9 +75,12 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\Database_users.mdf" />
+    <Content Include="App_Data\Database_users.mdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="App_Data\Database_users_log.ldf">
       <DependentUpon>Database_users.mdf</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Default.aspx" />
     <Content Include="Registr.aspx" />
@@ -86,7 +89,11 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DataBaseWorker.cs" />
+    <Compile Include="My Classes\DB Items\Comment.cs" />
+    <Compile Include="My Classes\DB Items\Item.cs" />
+    <Compile Include="My Classes\DATABASE\DataBaseWorker.cs" />
+    <Compile Include="My Classes\DATABASE\DBNewsWorker.cs" />
+    <Compile Include="My Classes\DATABASE\DBUsersWorker.cs" />
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -94,6 +101,8 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="My Interfaces\IInferensInfo.cs" />
+    <Compile Include="My Classes\DB Items\NewsPost.cs" />
     <Compile Include="Registr.aspx.cs">
       <DependentUpon>Registr.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -102,7 +111,9 @@
       <DependentUpon>Registr.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="My Classes\DB Items\User.cs" />
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

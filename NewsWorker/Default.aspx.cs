@@ -18,8 +18,9 @@ namespace NewsWorker
         {
 
             //вывод информации о пользователях
-            DataBaseWorker dbw = new DataBaseWorker("DefaultConnection");
-            dbw.ViewAllUsers(ListBox1);
+            DBUsersWorker DBU = new DBUsersWorker("DefaultConnection");
+            DBU.outputInferention(ListBox1);
+            
            
         }
 

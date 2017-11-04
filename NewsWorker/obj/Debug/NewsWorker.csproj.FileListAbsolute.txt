@@ -55,3 +55,5 @@ A:\Work\Projects\GIT\NewsWorker\NewsWorker\obj\Debug\NewsWorker.csprojResolveAss
 A:\Work\Projects\GIT\NewsWorker\NewsWorker\obj\Debug\NewsWorker.csproj.CoreCompileInputs.cache
 A:\Work\Projects\GIT\NewsWorker\NewsWorker\obj\Debug\NewsWorker.dll
 A:\Work\Projects\GIT\NewsWorker\NewsWorker\obj\Debug\NewsWorker.pdb
+A:\Work\Projects\GIT\NewsWorker\NewsWorker\bin\App_Data\Database_users.mdf
+A:\Work\Projects\GIT\NewsWorker\NewsWorker\bin\App_Data\Database_users_log.ldf
